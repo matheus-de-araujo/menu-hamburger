@@ -1,0 +1,178 @@
+/*===== GOOGLE FONTS =====*/
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap");
+
+/*===== Variáveis em css =====*/
+:root{
+  --header-height: 3rem;
+  --nav-width: 68px;
+
+  /*===== Cores =====*/
+  --cor-azul-principal: #0d1a27;
+  --first-color-light: #AFA5D9;
+  --cor-branca: #F7F6FB;
+  
+  /*===== Fontes e Tipografia =====*/
+  --body-font: 'Nunito', sans-serif;
+  --normal-font-size: 1rem;
+  
+  /*===== Nível em Z =====*/
+  --z-fixed: 100;
+}
+
+/*===== Base de tudo =====*/
+*,::before,::after{
+  box-sizing: border-box;
+}
+
+body{
+  position: relative;
+  margin: var(--header-height) 0 0 0;
+  padding: 0 1rem;
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  transition: .5s;
+}
+
+a{
+  text-decoration: none;
+}
+
+/*===== Menu Superior =====*/
+.menu-superior{
+  width: 100%;
+  height: var(--header-height);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1rem;
+  background-color: var(--cor-branca);
+  z-index: var(--z-fixed);
+  transition: .5s;
+}
+
+.icone {
+  transform: scale(1.4);
+}
+
+.btn-menu{
+  color: var(--cor-azul-principal);
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+/*===== Menu Lateral =====*/
+.menu-lateral{
+  position: fixed;
+  top: 0;
+  left: -30%;
+  width: var(--nav-width);
+  height: 100vh;
+  background-color: var(--cor-azul-principal);
+  padding: .5rem .6rem 0 0;
+  transition: .5s;
+  z-index: var(--z-fixed);
+}
+
+.nav{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+.menu-logo, .nav-lista{
+  display: grid;
+  grid-template-columns: max-content max-content;
+  align-items: center;
+  gap: 1rem;
+  padding: .5rem 0 .5rem 1.5rem;
+}
+
+.menu-logo{
+  margin-bottom: 2rem;
+  padding: 15px;
+}
+
+.menu-logo-img {
+  width:40px;
+}
+
+.menu-logo-nome{
+  color: var(--cor-branca);
+  font-weight: 700;
+  word-wrap: unset;
+}
+
+.nav-lista{
+  position: relative;
+  color: var(--first-color-light);
+  margin-bottom: 1.5rem;
+  transition: .3s;
+}
+
+.nav-lista:hover{
+  color: var(--cor-branca);
+}
+
+.nav-icone{
+  font-size: 1.25rem;
+}
+
+/*Movimenta o menu lateral*/
+.show{
+  left: 0;
+}
+
+/*Movimenta o corpo do site e o menu superior*/
+.body-pd{
+  padding-left: calc(var(--nav-width) + 1rem);
+}
+
+/*Ativa as seções do menu lateral*/
+.ativo{
+  color: var(--cor-branca);
+}
+
+.ativo::before{
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 2px;
+  height: 32px;
+  background-color: var(--cor-branca);
+}
+
+/* ===== Responsividade =====*/
+@media screen and (min-width: 768px){
+  body{
+    margin: calc(var(--header-height) + 1rem) 0 0 0;
+    padding-left: calc(var(--nav-width) + 2rem);
+  }
+
+  .menu-superior{
+    height: calc(var(--header-height) + 1rem);
+    padding: 0 2rem 0 calc(var(--nav-width) + 2rem);
+  }
+
+  .menu-lateral{
+    left: 0;
+    padding: 1rem .5rem 0 0;
+  }
+  
+  /*Mostra o menu completo quando Desktop*/
+  .show{
+    width: calc(var(--nav-width) + 156px);
+  }
+
+  /*Adiciona um padding para mover o conteúdo*/
+  .body-pd{
+    padding-left: calc(var(--nav-width) + 188px);
+  }
+}
+
+
+
