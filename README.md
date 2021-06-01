@@ -26,7 +26,7 @@ Protótipo de um mennu hamburger feito inteiramente em css puro
 ## 🚀 Como executar o projeto
 
 É preciso ter um editor para trabalhar com o código como [VSCode](https://code.visualstudio.com/).
-Mas para ver como ficou o projeto basta clicar [aqui](https://matheus-de-araujo.github.io/google-glass/)
+Mas para ver como ficou o projeto basta clicar [aqui](https://matheus-de-araujo.github.io/menu-hamburger/)
 
 #### 🧭 Rodando a aplicação
 
