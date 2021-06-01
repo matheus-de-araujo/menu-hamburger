@@ -37,7 +37,7 @@ Mas para ver como ficou o projeto basta clicar [aqui](https://matheus-de-araujo.
 ```bash
 
 # Clone este repositório
-$ git clone https://github.com/matheus-de-araujo/google-glass
+$ git clone https://github.com/matheus-de-araujo/menu-hamburger
 
 ```
 
