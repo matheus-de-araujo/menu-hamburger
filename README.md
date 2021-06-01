@@ -10,7 +10,7 @@
 	<a href="#-sobre-o-projeto">Sobre</a> •
 	<a href="#-layout">layout</a> • 
  	<a href="#-como-executar-o-projeto">Como executar</a> • 
-  <a href="#-tecnologias">Tecnologias</a>
+  	<a href="#-tecnologias">Tecnologias</a>
 </p>
 
 
@@ -20,7 +20,11 @@ Protótipo de um mennu hamburger feito inteiramente em css puro
 ## 🎨 Layout
 			 
 <p align="center" style="display: flex; align-items: flex-start; justify-content: center;">
-  	<img alt="Página Principal" src="/imagens/image-git.png" width="100%">
+  	<img alt="menu" src="/image/image1.png" width="100%">
+</p>
+
+<p align="center" style="display: flex; align-items: flex-start; justify-content: center;">
+  	<img alt="menu" src="/image/image2.png" width="100%">
 </p>
 			 
 ## 🚀 Como executar o projeto
