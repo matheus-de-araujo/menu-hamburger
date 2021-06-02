@@ -12,7 +12,10 @@
  	<a href="#-como-executar-o-projeto">Como executar</a> • 
   	<a href="#-tecnologias">Tecnologias</a>
 </p>
-
+			       
+<h4 align="center"> 
+	🚧  Status: Finalizado ✔️ 🚧
+</h4>
 
 ## :pencil: Sobre o projeto
 Protótipo de um mennu hamburger feito inteiramente em css puro
